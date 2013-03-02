@@ -12,8 +12,6 @@ A [talk](http://qconlondon.com/london-2013/presentation/Building%20APIs%20by%20b
 ### GDS
 ### Beta
 ### Design principles
-### Transformation
-### Digital-by-default standard
 
 ## [API design principles](http://alphagov.github.com/api-design-principles/)
 
@@ -27,4 +25,20 @@ A [talk](http://qconlondon.com/london-2013/presentation/Building%20APIs%20by%20b
 8. Explicitly set expectations
 9. Be public by default
 10. Communicate breaking changes
+
+## What's Next?
+### Transformation
+### Digital-by-default standard
+
+## Examples
+
+To be woven into the principles ..
+
+* Content API
+
+* Performance API
+https://www.gov.uk/performance/dashboard/content-engagement-detail.json
+
+* Mapping widget (How data keeps us honest)
+<a href="http://www.flickr.com/photos/psd/8387482942/" title="Maps by psd, on Flickr"><img src="http://farm9.staticflickr.com/8351/8387482942_b5eec6345c.jpg" width="500" height="355" alt="Maps"></a>
 
