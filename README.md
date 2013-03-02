@@ -40,5 +40,6 @@ To be woven into the principles ..
 https://www.gov.uk/performance/dashboard/content-engagement-detail.json
 
 * Mapping widget (How data keeps us honest)
+
 <a href="http://www.flickr.com/photos/psd/8387482942/" title="Maps by psd, on Flickr"><img src="http://farm9.staticflickr.com/8351/8387482942_b5eec6345c.jpg" width="500" height="355" alt="Maps"></a>
 
