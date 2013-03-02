@@ -160,8 +160,12 @@ When changing URIs, continue to honour old consumers, possibly use a [redirectio
 
 
 ## What's Next?
+[Government Digital Strategy](http://www.publications.cabinetoffice.gov.uk/digital/strategy/)
+
 ### Transformation
 ### Digital-by-default standard
+
+<a href="http://www.flickr.com/photos/psd/8469350410/" title="Pretty amazing advice for 2003 by psd, on Flickr"><img src="http://farm9.staticflickr.com/8101/8469350410_bd7844b7b4.jpg" width="375" height="500" alt="Pretty amazing advice for 2003"></a>
 
 The [API Craft Group](http://groups.google.com/group/api-craft) is a reasonably active public forum for discussing publishing APIs.
 

@@ -1,0 +1,3 @@
+Herein, [Government Digital Service (GDS)](http://digital.cabinetoffice.gov.uk/) Design principles for building [APIs](http://en.wikipedia.org/wiki/Application_programming_interface), illustrated by examples from [GOV.UK](https://www.gov.uk) and around The Web.
+
+These build upon the [GDS Design Principles](https://www.gov.uk/designprinciples) and inform the content of the GDS Service Design Manual.

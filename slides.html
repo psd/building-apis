@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=1024, user-scalable=no">
+
+	<title></title>
+	
+	<!-- Required stylesheet -->
+	<link rel="stylesheet" href="deckjs/core/deck.core.css">
+	
+	<!-- Extension CSS files go here. Remove or add as needed. -->
+	<link rel="stylesheet" href="deckjs/extensions/goto/deck.goto.css">
+	<link rel="stylesheet" href="deckjs/extensions/menu/deck.menu.css">
+	<link rel="stylesheet" href="deckjs/extensions/navigation/deck.navigation.css">
+	<link rel="stylesheet" href="deckjs/extensions/status/deck.status.css">
+	<link rel="stylesheet" href="deckjs/extensions/hash/deck.hash.css">
+	<link rel="stylesheet" href="deckjs/extensions/scale/deck.scale.css">
+
+	<!-- Style theme. More available in /themes/style/ or create your own. -->
+	<link rel="stylesheet" href="deckjs/themes/style/swiss.css">
+	
+	<!-- Transition theme. More available in /themes/transition/ or create your own. -->
+	<link rel="stylesheet" href="deckjs/themes/transition/horizontal-slide.css">
+	
+	<!-- Required Modernizr file -->
+	<script src="deckjs/modernizr.custom.js"></script>
+</head>
+<body class="deck-container">
+
+<!-- Begin slides. Just make elements with a class of slide. -->
+
+<section class="slide">
+    <p>When building an API there is a danger of building the wrong thing in the wrong way for the wrong people. This is a particular risk in the absence of a developer community driving <a href="https://www.gov.uk/designprinciples#first">the needs</a> of an API. The simplest way to ensure your API is useful and consumable is to build a Web site in conjunction with developing your own API.</p>
+
+<h2 id="why">Why</h2>
+<p>Building a Web site leads to considering how to best model content and data in terms of bookmarkable resources, and ensures data is presented in human as well as machine readable representations. Becoming a consumer of your own APIs not only validates your API, but exposes services <a href="http://www.w3.org/TR/webarch/">on The Web</a>, which is at the heart of all of our API design principles.</p>
+
+<h2 id="examples-of-web-sites-built-on-their-own-apis">Examples of Web sites built on their own APIs</h2>
+<p>GOV.UK <a href="http://digital.cabinetoffice.gov.uk/2011/09/22/building-apis-building-on-apis/">built an API, by building on an API</a>. Legislation.gov.uk is developed by <a href="http://digital.cabinetoffice.gov.uk/2012/03/30/putting-apis-first-legislation-gov-uk/">putting APIs first</a> and <a href="http://openspending.org/">OpenSpending.org</a> is built upon its own API — view-source is highly recommended on both these sites. Flickr is built upon the <a href="http://www.flickr.com/services/api/">Flickr API</a> and <a href="http://engineering.twitter.com/2010/09/tech-behind-new-twittercom.html">Twitter.com is a client of the Twitter API</a>.</p>
+
+</section>
+<section class="slide">
+    <p>Consider an API to be a part of a Web site.
+Provide links to machine-friendly formats from human readable pages,
+and enable agents to easily construct URLs which link to human-friendly representations of pages.</p>
+
+<p>Use standard formats for content, and follow established Web patterns for authentication.</p>
+
+<p>Building a service to enjoy mass adoption and support from a wide disparate community of developers and programming environments whilst being able to reach a world-wide audience is difficult.
+Whilst proprietary and open technologies abound for machine-to-machine communication, none combine the interoperability, reach and ability to scale to compete with The Web.</p>
+
+<h2 id="why">Why</h2>
+<p>Standards are powerful agreements, and nowhere are agreements more quickly established and adopted than on The Web.
+Using HTTP and URIs, the core technologies of The Web, together with emergent standards such as <a href="http://www.json.org/">JSON</a> and <a href="http://en.wikipedia.org/wiki/OAuth">OAuth</a> changes a Website from <a href="http://www.cabinetoffice.gov.uk/resource-library/directgov-2010-and-beyond-revolution-not-evolution">a retail shop window into a wholesaler</a>, meeting our design principle to <a href="https://www.gov.uk/designprinciples#eighth">Build digital services, not websites</a>.</p>
+
+<h2 id="examples-of-just-using-the-web">Examples of Just using The Web</h2>
+
+</section>
+<section class="slide">
+    <p>Expose data as a set of resources, offering a <a href="http://en.wikipedia.org/wiki/Clean_URL">clean URL</a> for each thing, and each collection of things.</p>
+
+<p>Only use <a href="http://en.wikipedia.org/wiki/Query_string">query strings</a> for URLs with unordered parameters, such as options to search pages.</p>
+
+<p>Consider creating URIs for different granularity of resources. For example, <code>/members.json</code> could return a list of names, whilst <code>/members.json?detail=full</code> could return detailed information about each member in a list.</p>
+
+<h1 id="why">Why</h1>
+<p>These principles enable network effects which arise through linking and allow information published beyond the Web, sent in alerts email, SMS, XMPP and other messages to link back to the canonical content, on The Web.
+<a href="http://www.w3.org/TR/webarch/#identification">Identification</a>
+<a href="http://www.jenitennison.com/blog/node/100">Your Website is Your API: Quick Wins for Government Data</a></p>
+
+<h1 id="putting-flickr-photographs-on-google-maps">Putting Flickr photographs on Google Maps</h1>
+<ul>
+  <li><a href="http://www.flickr.com/photos/psd/tags/lostfound/">lost+found</a> photos</li>
+  <li><a href="http://api.flickr.com/services/feeds/geo/?id=45581782@N00&amp;lang=en-us&amp;tags=lostfound&amp;format=rss_200">Flickr geoRSS Feed</a> </li>
+  <li><a href="https://maps.google.co.uk/maps?q=http:%2F%2Fapi.flickr.com%2Fservices%2Ffeeds%2Fgeo%2F%3Fid%3D45581782%40N00%26lang%3Den-us%26tags%3Dlostfound%26format%3Drss_200&amp;hl=en&amp;ll=51.782922,-0.557384&amp;spn=0.061913,0.108662&amp;sll=51.520707,0.046692&amp;sspn=0.470829,1.327972&amp;t=m&amp;z=13&amp;iwloc=lyrftr:kml:cH4sC9Lc5Qp3qPdqasvraisEVm0hInPZXrRfVhPrvbHFDJg,BD9CEB85F1B3212D,51.757428,-0.556011,0,-32">Google Maps</a></li>
+</ul>
+
+<h1 id="aggregation-of-openspending-data">Aggregation of Openspending data</h1>
+<p>Openspending has a page for each item, and pages which allow arbitrary aggregation of results, allowing the selection of data, and reducing the volume of data a client needs to consume to find total row and columns.</p>
+
+</section>
+<section class="slide">
+    <p>Ensure all <a href="http://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Request_methods">HTTP GET</a> requests are <a href="http://www.w3.org/2001/tag/doc/whenToUseGet.html">safe</a>, and actions which change state are conducted using a <a href="http://en.wikipedia.org/wiki/POST_\(HTTP\)">POST</a>, PUT or DELETE method.</p>
+
+<p>Use PUT and DELETE which are commonly blocked by firewalls, intranet proxies, hotel Wifi and mobile operators with caution; always offer a POST alternative.</p>
+
+<p>Avoid HTTP methods which are not well defined, such as PATCH.</p>
+
+<h2 id="why">Why</h2>
+<p>Caching, safety.</p>
+
+<h2 id="rest-in-practice">REST in practice</h2>
+<p>REST Cookbook</p>
+
+</section>
+<section class="slide">
+    <p>Offer content for each thing as a human-readable HTML, with links to content in alternative machine-readable representations:</p>
+
+<ul>
+  <li><a href="http://en.wikipedia.org/wiki/JSON">JSON</a> for convenient processing in most programming languages</li>
+  <li><a href="http://en.wikipedia.org/wiki/JSONP">JSONP</a> and JSON with <a href="http://en.wikipedia.org/wiki/Cross-origin_resource_sharing">CORS</a> for client-side JavaScript</li>
+  <li><a href="http://en.wikipedia.org/wiki/Comma-separated_values">CSV</a> for importing into spreadsheets</li>
+  <li><a href="http://en.wikipedia.org/wiki/Atom_\(standard\)">Atom</a> for <a href="http://en.wikipedia.org/wiki/Web_feed">feeds</a>.</li>
+</ul>
+
+<p>Where possible, also offer other formats most suited to a specific domain, such as:</p>
+
+<ul>
+  <li><a href="http://en.wikipedia.org/wiki/ICalendar">iCalendar</a> for events</li>
+  <li><a href="http://en.wikipedia.org/wiki/VCard">vCard</a> for name and addresses</li>
+  <li><a href="http://en.wikipedia.org/wiki/Keyhole_Markup_Language">KML</a> and <a href="http://en.wikipedia.org/wiki/GeoRSS">geoRSS</a> for geographical data</li>
+  <li><a href="http://en.wikipedia.org/wiki/.m3u">m3u</a> for playlists</li>
+</ul>
+
+<p>Include hyperlinks to alternative representations as <a href="http://www.w3.org/TR/html51/document-metadata.html#the-link-element">link headers</a> as well as in content.</p>
+
+<p><em>Consider also encoding meta-data inside HTML content using semantic markup: <a href="http://microformats.org/">Microformats</a>. <a href="http://en.wikipedia.org/wiki/Rdfa">RDFa</a> or <a href="http://schema.org/">schema.org</a>.</em></p>
+
+<p>The representations supported by an API for input will vary depending upon the complexity of the action, but where possible should include <code>application/x-www-form-urlencoded</code> to allow the construction of simple <a href="http://en.wikipedia.org/wiki/POST_\(HTTP\)">POST</a> forms.</p>
+
+<h2 id="why">Why</h2>
+
+<h2 id="mapping-between-xml-json-and-csv">Mapping between XML, JSON and CSV</h2>
+
+</section>
+<section class="slide">
+    <p>Use names for fields, formats and path segments in a URI path consistently across your API.
+Establish conventions others may easily follow, and anticipate.
+Where possible, reuse names widely used elsewhere on The Web.</p>
+
+<h2 id="why">Why</h2>
+<p>Novelty is bad for standards, and certainly bad for interoperability, which depends on being able to depend on the same name meaning the same thing.</p>
+
+<h2 id="microformats">Microformats</h2>
+<p>The <a href="http://microformats.org/wiki/naming-principles">Microformat naming principles</a></p>
+
+</section>
+<section class="slide">
+    <p>Building a Website which exposes the data through links, and services through HTML forms encourages exploration and leads to <a href="http://roy.gbiv.com/untangled/2008/rest-apis-must-be-hypertext-driven">discovery through hypertext</a>.
+Provide documentation for your API using examples.
+Collect how people are using your API, especially link to any open source projects for projects, wrappers and programming language libraries.
+Provide simple ways to experiment, as with <a href="http://explorer.content.guardianapis.com/">The Guardian API explorer</a>.</p>
+
+<h1 id="why">Why</h1>
+
+<h1 id="examples">Examples</h1>
+
+</section>
+<section class="slide">
+    <p>Be clear in Web pages and other documentation as to the security, availability, rate-limiting, privacy, expected responsiveness of the platform and the provenance of data, so consumers may plan their commitment to using your API.</p>
+
+<h2 id="why">Why</h2>
+
+<h2 id="examples">Examples</h2>
+<p>Legislation being re-purposed in books and apps.
+Water quality data having legal requirements for publication?</p>
+
+</section>
+<section class="slide">
+    <p>Publish open data under a permissive licence.</p>
+
+<p>Lower the barriers to others using your data; don’t demand registration or API keys for public data.</p>
+
+<p>Open data increases the number of people able to use your data and service, and leads to feedback loops where consumers become motivated to resolve issues at source, feeding back issues and correction to your service and the data within.</p>
+
+<p>Where content is sensitive, or requires authentication, use encryption (HTTPS) and a standard authentication such as <a href="http://en.wikipedia.org/wiki/Basic_access_authentication">Basic Authentication</a> or <a href="http://en.wikipedia.org/wiki/OAuth">OAuth</a>, depending upon the sensitivity of your content.</p>
+
+<h1 id="why">Why</h1>
+<p>As a publisher it’s simple to publish and you do not have answer requests for data or repeatedly explain to others that they can use your data.
+Increases discovery, means consumers can easily find, see, print, share, copy, modify and build upon data.
+Building virtuous feedback loops for data; value of data increases more people who use it.</p>
+
+<h1 id="examples">Examples</h1>
+<p>The Open Web Application Security Project (<a href="https://www.owasp.org">OWASP</a>) maintains a large repository of security information applicable to building APIs, a including a <a href="https://www.owasp.org/index.php/REST_Security_Cheat_Sheet">REST Security Cheat Sheet</a>.</p>
+
+</section>
+<section class="slide">
+    <p>Practice service evolution</p>
+
+<ul>
+  <li>Build for <a href="http://en.wikipedia.org/wiki/Forward_compatibility">forwards compatibility</a> by gracefully handling content that is unexpected. The <a href="http://en.wikipedia.org/wiki/Robustness_principle">robustness principle</a> — 
+Postel’s Law explains the ability for The Web and Internet to evolve, though you shouldn’t ignore protocol errors, corrupted, or invalidly formatted content.</li>
+  <li>Preserve <a href="http://en.wikipedia.org/wiki/Backward_compatibility">backwards compatibility</a> with existing consumers of your API, by sending expected content,
+Eschew changes to the semantics of content, e.g. don’t change a <code>title</code> field from to the prefix for a name to the person’s job title.</li>
+</ul>
+
+<p>Where a revolutionary change is unavoidable, communicate a breaking change by changing the URL.
+When changing URIs, continue to honour old consumers, possibly use a <a href="http://digital.cabinetoffice.gov.uk/2012/10/11/no-link-left-behind/">redirection</a>.
+<a href="http://www.w3.org/Provider/Style/URI.html">Cool URIs don’t change</a>.</p>
+
+<h2 id="further-reading">Further reading</h2>
+<p>This guide is an outline of the alpha <a href="https://github.com/alphagov/api-design-principles">GDS API Design Principles</a>.
+The <a href="http://groups.google.com/group/api-craft">API Craft Group</a> is a reasonably active public forum for discussing publishing APIs.</p>
+
+<h2 id="why">Why</h2>
+
+<h2 id="examples-of-service-evolution">Examples of service evolution</h2>
+<p><a href="http://www.mnot.net/blog/2012/12/04/api-evolution">service evolution</a></p>
+
+</section>
+
+<!-- End slides. -->
+
+<!-- deck.navigation snippet -->
+<a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
+<a href="#" class="deck-next-link" title="Next">&#8594;</a>
+
+<!-- deck.hash snippet -->
+<a href="." title="Permalink to this slide" class="deck-permalink">#</a>
+
+<!-- Required JS files. -->
+<script src="deckjs/jquery-1.7.2.min.js"></script>
+<script src="deckjs/core/deck.core.js"></script>
+
+<!-- Extension JS files. Add or remove as needed. -->
+<script src="deckjs/core/deck.core.js"></script>
+<script src="deckjs/extensions/hash/deck.hash.js"></script>
+<script src="deckjs/extensions/menu/deck.menu.js"></script>
+<script src="deckjs/extensions/scale/deck.scale.js"></script>
+
+<!-- Initialize the deck. You can put this in an external file if desired. -->
+<script>
+	$(function() {
+		$.deck('.slide');
+	});
+</script>
+</body>
+</html>

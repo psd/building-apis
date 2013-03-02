@@ -1,0 +1,4 @@
+## Licence
+This is an open source project with contributions from a number of parties, including [The Open Data Institute (ODI)](http://www.theodi.org/). You can see the development history, comment upon the content, raise issues, and make pull-requests for changes on [GitHub](https://github.com/alphagov/api-design-principles).
+
+All content is &copy; [Crown Copyright](http://www.nationalarchives.gov.uk/information-management/our-services/crown-copyright.htm) and published under the [Open Government Licence](http://www.nationalarchives.gov.uk/doc/open-government-licence/) which has been designed to be interoperable with any [Creative Commons](http://creativecommons.org/) attribution licence.

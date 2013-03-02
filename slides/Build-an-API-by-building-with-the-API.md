@@ -1,0 +1,7 @@
+When building an API there is a danger of building the wrong thing in the wrong way for the wrong people. This is a particular risk in the absence of a developer community driving [the needs](https://www.gov.uk/designprinciples#first) of an API. The simplest way to ensure your API is useful and consumable is to build a Web site in conjunction with developing your own API.
+
+## Why
+Building a Web site leads to considering how to best model content and data in terms of bookmarkable resources, and ensures data is presented in human as well as machine readable representations. Becoming a consumer of your own APIs not only validates your API, but exposes services [on The Web](http://www.w3.org/TR/webarch/), which is at the heart of all of our API design principles.
+
+## Examples of Web sites built on their own APIs
+GOV.UK [built an API, by building on an API](http://digital.cabinetoffice.gov.uk/2011/09/22/building-apis-building-on-apis/). Legislation.gov.uk is developed by [putting APIs first](http://digital.cabinetoffice.gov.uk/2012/03/30/putting-apis-first-legislation-gov-uk/) and [OpenSpending.org](http://openspending.org/) is built upon its own API — view-source is highly recommended on both these sites. Flickr is built upon the [Flickr API](http://www.flickr.com/services/api/) and [Twitter.com is a client of the Twitter API](http://engineering.twitter.com/2010/09/tech-behind-new-twittercom.html).
