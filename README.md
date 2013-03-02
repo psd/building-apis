@@ -15,16 +15,19 @@ A [talk](http://qconlondon.com/london-2013/presentation/Building%20APIs%20by%20b
 
 ## [API design principles](http://alphagov.github.com/api-design-principles/)
 
-1. Build an API by building with the API
-2. Just use The Web
-3. Give everything a URI
-4. Use HTTP methods as Tim intended
-5. Representations are for the consumer
-6. Names reinforce conventions
-7. Document by discovery … and example
-8. Explicitly set expectations
-9. Be public by default
-10. Communicate breaking changes
+<a href="http://www.flickr.com/photos/psd/8521872398/" title="API Design Principles by psd, on Flickr"><img src="http://farm9.staticflickr.com/8107/8521872398_9da7f29b12.jpg" width="277" height="500" alt="API Design Principles"></a>
+
+### 1. Build an API by building with the API
+### 2. Just use The Web
+### 3. Give everything a URI
+### 4. Use HTTP methods as Roy^W Tim intended
+<a href="http://www.flickr.com/photos/psd/8271699529/" title="a tongue-in-cheek change request from @timberners_lee .. by psd, on Flickr"><img src="http://farm9.staticflickr.com/8337/8271699529_37484828aa.jpg" width="500" height="375" alt="a tongue-in-cheek change request from @timberners_lee .."></a>
+### 5. Representations are for the consumer
+### 6. Names reinforce conventions
+### 7. Document by discovery … and example
+### 8. Explicitly set expectations
+### 9. Be public by default
+### 10. Communicate breaking changes
 
 ## What's Next?
 ### Transformation
