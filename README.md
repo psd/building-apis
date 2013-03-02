@@ -12,6 +12,7 @@ A [talk](http://qconlondon.com/london-2013/presentation/Building%20APIs%20by%20b
 ## Beta
 ## Design principles
 ## [API design principles](http://alphagov.github.com/api-design-principles/)
+
 1. Build an API by building with the API
 2. Just use The Web
 3. Give everything a URI
@@ -22,5 +23,6 @@ A [talk](http://qconlondon.com/london-2013/presentation/Building%20APIs%20by%20b
 8. Explicitly set expectations
 9. Be public by default
 10. Communicate breaking changes
+
 ## Transformation
 ## Digital-by-default standard
