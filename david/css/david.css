@@ -1,0 +1,37 @@
+/* Custom CSS for your KeyDown presentation here */
+
+/* Uncomment to turn off deck.js navigation */
+/*.deck-prev-link,*/
+/*.deck-next-link {*/
+    /*display: none;*/
+/*}*/
+
+/* Uncomment to turn off deck.js status */
+/*.deck-status {*/
+    /*display: none;*/
+/*}*/
+.deck-container {
+  font-family: sans-serif;
+}
+
+.deck-container blockquote {
+  font-size: 2em;
+  font-style: normal;
+  padding: 0;
+  color: #000;
+}
+.deck-container blockquote:before {
+  content: "\201C";
+  float: left;
+  clear: both;
+  font-size: 48px;
+  font-size: 4.8rem;
+  line-height: 1.0416666667;
+  font-weight: 400;
+  text-transform: none;
+  padding-top: 12px;
+  padding-top: 1.2rem;
+  padding-bottom: 8px;
+  padding-bottom: 0.8rem;
+  padding-top: 0;
+}
